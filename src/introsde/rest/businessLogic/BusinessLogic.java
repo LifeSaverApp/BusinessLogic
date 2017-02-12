@@ -34,8 +34,8 @@ public class BusinessLogic {
     @Path("/getPersonDetails")
     public Response getPersonDetails() throws ClientProtocolException, IOException {
 
-        String ENDPOINT = "http://10.218.200.214:5900/introsde/storage/getPersonDetails";
-    	//String ENDPOINT = "http://storageservices.herokuapp.com/introsde/storage/getPersonDetails";
+     //   String ENDPOINT = "http://10.218.200.214:5900/introsde/storage/getPersonDetails";
+    	String ENDPOINT = "http://storageservices.herokuapp.com/introsde/storage/getPersonDetails";
 
     	DefaultHttpClient client = new DefaultHttpClient();
      	HttpGet request = new HttpGet(ENDPOINT);
@@ -66,8 +66,8 @@ public class BusinessLogic {
     @Path("/getGoals")
     public Response getGoals() throws ClientProtocolException, IOException {
 
-        String ENDPOINT = "http://10.218.200.214:5900/introsde/storage/getGoals";
-    	//String ENDPOINT = "http://storageservices.herokuapp.com/introsde/storage/getGoals";
+     //   String ENDPOINT = "http://10.218.200.214:5900/introsde/storage/getGoals";
+    	String ENDPOINT = "http://storageservices.herokuapp.com/introsde/storage/getGoals";
 
         DefaultHttpClient client = new DefaultHttpClient();
         HttpGet request = new HttpGet(ENDPOINT);
@@ -103,8 +103,8 @@ public class BusinessLogic {
          String comparison = "";
 
 // a) Getting the goals
-         String ENDPOINT = "http://10.218.200.214:5900/introsde/storage/getGoals/";
-         //String ENDPOINT = "http://storageservices.herokuapp.com/introsde/storage/getGoals";
+         //String ENDPOINT = "http://10.218.200.214:5900/introsde/storage/getGoals/";
+         String ENDPOINT = "http://storageservices.herokuapp.com/introsde/storage/getGoals";
 
          DefaultHttpClient client = new DefaultHttpClient();
          HttpGet request = new HttpGet(ENDPOINT);
@@ -131,8 +131,8 @@ public class BusinessLogic {
 
          // b) Getting lifestatus measures
 
-         String ENDPOINT2 = "http://10.218.200.214:5900/introsde/storage/getPersonDetails";
-         //String ENDPOINT2 = "http://storageservices.herokuapp.com/introsde/storage/getPersonDetails";
+         //String ENDPOINT2 = "http://10.218.200.214:5900/introsde/storage/getPersonDetails";
+         String ENDPOINT2 = "http://storageservices.herokuapp.com/introsde/storage/getPersonDetails";
          DefaultHttpClient client2 = new DefaultHttpClient();
          HttpGet request2 = new HttpGet(ENDPOINT2);
          HttpResponse response2 = client2.execute(request2);
